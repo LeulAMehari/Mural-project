@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj": {}
+    "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj": {
+    "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+        "projectUniqueName": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
         "projectName": "MarshallsRevMethods",
-        "projectPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+        "projectPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
         "packagesPath": "C:\\Users\\leula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\",
+        "outputPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leula\\AppData\\Roaming\\NuGet\\NuGet.Config",

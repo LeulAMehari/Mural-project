@@ -36,7 +36,7 @@ class MarshallsRevenue
     public static int GetMonth()
     {
         Write("Enter Month ");
-        WriteLine("HHHHHHEEEEEEEEEEEYYYYYYYYY");
+        
         int mymonth;
         string entry = ReadLine();
         int.TryParse(entry, out mymonth);
@@ -52,22 +52,29 @@ class MarshallsRevenue
     {
         int[] myArray = new int[2];           // since we can't return two values we will put num_murals to the array then return the array
         Write("Enter number of interior murals scheduled ");
-        int interiorM = Convert.ToInt32(ReadLine());
-        while (interiorM < 0 || interiorM > 30)
+        int interiorM;
+        string interiorMu = ReadLine();
+        bool checkVal = int.TryParse(interiorMu, out interiorM);
+        WriteLine(checkVal);
+        while (interiorM < 0 || interiorM > 30 || checkVal == false)
         {
             WriteLine("Enter a Valid number of interior Murals");
-            interiorM = Convert.ToInt32(ReadLine());
+            interiorMu = ReadLine();
+            checkVal = int.TryParse(interiorMu, out interiorM);
+
         }
         myArray[0] = interiorM;
-
         Write("Enter number of exterior murals scheduled ");
-        int exteriorM = Convert.ToInt32(ReadLine());
+        string exteriorMu = ReadLine();
+        int exteriorM;
+        checkVal = int.TryParse(exteriorMu, out exteriorM);
 
-        while (exteriorM < 0 || exteriorM > 30)
+        while (exteriorM < 0 || exteriorM > 30 || checkVal == false)
         {
             WriteLine("Enter a Valid number of exterior Murals");
-            exteriorM = Convert.ToInt32(ReadLine());
-            
+            exteriorMu = ReadLine();
+            checkVal = int.TryParse(exteriorMu, out exteriorM);
+
         }
         myArray[1] = exteriorM;
         return myArray;
