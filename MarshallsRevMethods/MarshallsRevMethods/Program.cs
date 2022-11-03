@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Console;
 using System.Globalization;
-public class MarshallsRevenue
+class MarshallsRevenue
 {
     enum Months
     {
@@ -36,11 +36,7 @@ public class MarshallsRevenue
     public static int GetMonth()
     {
         Write("Enter Month ");
-        
-        int mymonth;
-        string testing21;
-        string entry = ReadLine();
-        int.TryParse(entry, out mymonth);
+        int mymonth = Convert.ToInt32(ReadLine());
         while (mymonth < 1 || mymonth > 12)
         {
             WriteLine("Enter a Valid month");
@@ -53,33 +49,27 @@ public class MarshallsRevenue
     {
         int[] myArray = new int[2];           // since we can't return two values we will put num_murals to the array then return the array
         Write("Enter number of interior murals scheduled ");
-        int interiorM;
-        string interiorMu = ReadLine();
-        bool checkVal = int.TryParse(interiorMu, out interiorM);
-        while (interiorM < 0 || interiorM > 30 || checkVal == false)
+        int interiorM = Convert.ToInt32(ReadLine());
+        while (interiorM < 0 || interiorM > 30)
         {
             WriteLine("Enter a Valid number of interior Murals");
-            interiorMu = ReadLine();
-            checkVal = int.TryParse(interiorMu, out interiorM);
-
+            interiorM = Convert.ToInt32(ReadLine());
         }
         myArray[0] = interiorM;
-        Write("Enter number of exterior murals scheduled ");
-        string exteriorMu = ReadLine();
-        int exteriorM;
-        checkVal = int.TryParse(exteriorMu, out exteriorM);
 
-        while (exteriorM < 0 || exteriorM > 30 || checkVal == false)
+        Write("Enter number of exterior murals scheduled ");
+        int exteriorM = Convert.ToInt32(ReadLine());
+
+        while (exteriorM < 0 || exteriorM > 30)
         {
             WriteLine("Enter a Valid number of exterior Murals");
-            exteriorMu = ReadLine();
-            checkVal = int.TryParse(exteriorMu, out exteriorM);
-
+            exteriorM = Convert.ToInt32(ReadLine());
+            
         }
         myArray[1] = exteriorM;
         return myArray;
     }
-    public static double ComputeRevenue(int month, int interior, int exterior)
+    public static void ComputeRevenue(int month, int interior, int exterior)
     {
         double interiorCost = 500.00;
         double exteriorCost = 750.00;
@@ -114,8 +104,6 @@ public class MarshallsRevenue
             exterior, exteriorCost.ToString("C", CultureInfo.GetCultureInfo("en-US")),
             priceExt.ToString("C", CultureInfo.GetCultureInfo("en-US")));
         WriteLine("Total revenue expected is {0}", totalPrice.ToString("C", CultureInfo.GetCultureInfo("en-US")));
-
-        return totalPrice;
     }
     public static void DataEntry(string[] muralModels, string[] muralTypes, string[] interiorStyle, string[] exteriorStyle, string[] customerInterior, string[] customerExterior, string[] interiorCodes, string[] exteriorCodes, int interior, int exterior, bool check)
     {
