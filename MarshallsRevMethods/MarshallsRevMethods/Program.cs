@@ -36,11 +36,14 @@ class MarshallsRevenue
     public static int GetMonth()
     {
         Write("Enter Month ");
-        int mymonth = Convert.ToInt32(ReadLine());
+        int mymonth;
+        string entry = ReadLine();
+        int.TryParse(entry, out mymonth);
         while (mymonth < 1 || mymonth > 12)
         {
             WriteLine("Enter a Valid month");
-            mymonth = Convert.ToInt32(ReadLine());
+            entry = ReadLine();
+            int.TryParse(entry, out mymonth);
         }
         return mymonth;
     }
