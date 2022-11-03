@@ -36,6 +36,7 @@ class MarshallsRevenue
     public static int GetMonth()
     {
         Write("Enter Month ");
+        WriteLine("HHHHHHEEEEEEEEEEEYYYYYYYYY");
         int mymonth;
         string entry = ReadLine();
         int.TryParse(entry, out mymonth);
