@@ -38,6 +38,7 @@ public class MarshallsRevenue
         Write("Enter Month ");
         
         int mymonth;
+        string testing21;
         string entry = ReadLine();
         int.TryParse(entry, out mymonth);
         while (mymonth < 1 || mymonth > 12)
