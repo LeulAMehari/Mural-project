@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\leula\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\leula\\.nuget\\packages"
+    ]
+  }
+}
