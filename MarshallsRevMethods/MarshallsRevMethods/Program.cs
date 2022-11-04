@@ -188,7 +188,7 @@ class MarshallsRevenue
         {
             WriteLine("{0,-10}{1,-17}", muralTypes[i], countExteriorTypes[i]);
         }
-        WriteLine();
+        WriteLine("heyy");
     }
     
     public static void GetSelectedMurals(string[] muralModels, string[] muralTypes, int interior, int exterior, string[] cusInterior, string[] cusExterior, string[] codesInterior, string[] codesExterior)

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\leula\\.nuget\\packages\\": {}
+    "C:\\Users\\crist\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\Source\\Repos\\projectsCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
       "projectName": "MarshallsRevMethods",
-      "projectPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
-      "packagesPath": "C:\\Users\\leula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\",
+      "projectPath": "C:\\Users\\crist\\Source\\Repos\\projectsCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+      "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crist\\Source\\Repos\\projectsCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\leula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
