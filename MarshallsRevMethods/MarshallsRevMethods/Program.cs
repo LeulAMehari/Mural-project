@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Console;
 using System.Globalization;
-class MarshallsRevenue
+public class MarshallsRevenue
 {
     enum Months
     {
@@ -55,7 +55,6 @@ class MarshallsRevenue
         int interiorM;
         string interiorMu = ReadLine();
         bool checkVal = int.TryParse(interiorMu, out interiorM);
-        WriteLine(checkVal);
         while (interiorM < 0 || interiorM > 30 || checkVal == false)
         {
             WriteLine("Enter a Valid number of interior Murals");

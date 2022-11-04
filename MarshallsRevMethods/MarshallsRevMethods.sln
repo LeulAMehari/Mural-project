@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshallsRevMethods", "MarshallsRevMethods\MarshallsRevMethods.csproj", "{3A367AAA-95B0-4495-A158-123077E29EC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarshallsRevMethods", "MarshallsRevMethods\MarshallsRevMethods.csproj", "{3A367AAA-95B0-4495-A158-123077E29EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getmonth test", "Getmonth test\Getmonth test.csproj", "{9716FC53-5D9C-4927-A5B2-44E7362F6D67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3A367AAA-95B0-4495-A158-123077E29EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A367AAA-95B0-4495-A158-123077E29EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A367AAA-95B0-4495-A158-123077E29EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
