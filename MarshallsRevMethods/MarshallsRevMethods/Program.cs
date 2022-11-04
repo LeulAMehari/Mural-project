@@ -78,7 +78,7 @@ public class MarshallsRevenue
         myArray[1] = exteriorM;
         return myArray;
     }
-    public static void ComputeRevenue(int month, int interior, int exterior)
+    public static double ComputeRevenue(int month, int interior, int exterior)
     {
         double interiorCost = 500.00;
         double exteriorCost = 750.00;
@@ -113,6 +113,8 @@ public class MarshallsRevenue
             exterior, exteriorCost.ToString("C", CultureInfo.GetCultureInfo("en-US")),
             priceExt.ToString("C", CultureInfo.GetCultureInfo("en-US")));
         WriteLine("Total revenue expected is {0}", totalPrice.ToString("C", CultureInfo.GetCultureInfo("en-US")));
+
+        return totalPrice;
     }
     public static void DataEntry(string[] muralModels, string[] muralTypes, string[] interiorStyle, string[] exteriorStyle, string[] customerInterior, string[] customerExterior, string[] interiorCodes, string[] exteriorCodes, int interior, int exterior, bool check)
     {
