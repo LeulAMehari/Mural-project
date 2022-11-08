@@ -8,19 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\leula\\.nuget\\packages\\": {}
+    "C:\\Users\\snolg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+      "projectUniqueName": "C:\\Users\\snolg\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
       "projectName": "MarshallsRevMethods",
-      "projectPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
-      "packagesPath": "C:\\Users\\leula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leula\\Source\\Repos\\projectCOMS201Leul's branch\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\",
+      "projectPath": "C:\\Users\\snolg\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+      "packagesPath": "C:\\Users\\snolg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\snolg\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\leula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\snolg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
       }
     }
   }
