@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarshallsRevMethods", "Mars
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Getmonth test", "Getmonth test\Getmonth test.csproj", "{9716FC53-5D9C-4927-A5B2-44E7362F6D67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mural", "Mural\Mural.csproj", "{96159797-5509-419C-A38F-C6A02D852D13}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9716FC53-5D9C-4927-A5B2-44E7362F6D67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96159797-5509-419C-A38F-C6A02D852D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96159797-5509-419C-A38F-C6A02D852D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96159797-5509-419C-A38F-C6A02D852D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96159797-5509-419C-A38F-C6A02D852D13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

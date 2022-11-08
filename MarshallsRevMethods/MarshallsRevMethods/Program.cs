@@ -7,6 +7,7 @@ public class MarshallsRevenue
     {
         January = 1, February, March, April, May, June, July, August, September, October, November, December
     }
+    /*
     static void Main()
     {
         const int MAX_MURALS = 30;
@@ -32,6 +33,17 @@ public class MarshallsRevenue
         DataEntry(muralModels, muralTypes, interiorStyle, exteriorStyle, customerInterior, customerExterior, interiorCodes, exteriorCodes, interior, exterior, check);
         GetSelectedMurals(muralModels, muralTypes, interior, exterior, customerInterior, customerExterior, interiorCodes,  exteriorCodes);
 
+    }
+    */
+    static void Main()
+    {
+        Mural.Mural myMural = new Mural.Mural();
+
+        Write("Enter the month: ");
+        int temp;
+        int.TryParse(ReadLine(), out temp);
+        myMural.MyMonth = temp;
+        WriteLine("Month: {0}", myMural.MyMonth);
     }
     public static int GetMonth()
     {
