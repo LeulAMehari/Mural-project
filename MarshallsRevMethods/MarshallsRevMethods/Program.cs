@@ -1,12 +1,14 @@
 ﻿using System;
 using static System.Console;
 using System.Globalization;
+
 public class MarshallsRevenue
 {
     enum Months
     {
         January = 1, February, March, April, May, June, July, August, September, October, November, December
     }
+    /*
     static void Main()
     {
         const int MAX_MURALS = 30;
@@ -33,14 +35,39 @@ public class MarshallsRevenue
         GetSelectedMurals(muralModels, muralTypes, interior, exterior, customerInterior, customerExterior, interiorCodes,  exteriorCodes);
 
     }
+    */
+    static void Main()
+    {
+        Mural.Mural myMural = new Mural.Mural();
+
+
+        Write("Enter the month: ");
+        int temp;
+        int.TryParse(ReadLine(), out temp);
+        myMural.MyMonth = temp;
+        WriteLine("Month: {0}", myMural.MyMonth);
+
+        Mural.Mural userMuralOrders = new Mural.Mural();
+
+        int[] myArray = new int[2];
+        //bool checkVal = int.TryParse(ReadLine(), out interiorM);
+
+        userMuralOrders.MuralOrders = myArray;
+        //myArray = userMuralOrders.MuralOrders;
+        int x = myArray[0];
+        int y = myArray[1];
+
+
+
+    }
     public static int GetMonth()
     {
         Write("Enter Month ");
-        
+
         int mymonth;
         string entry = ReadLine();
         int.TryParse(entry, out mymonth);
-        while (mymonth < 1 || mymonth > 12)
+        while (mymonth < 1 ||  mymonth > 12)
         {
             WriteLine("Enter a Valid month");
             entry = ReadLine();
@@ -55,7 +82,7 @@ public class MarshallsRevenue
         int interiorM;
         string interiorMu = ReadLine();
         bool checkVal = int.TryParse(interiorMu, out interiorM);
-        while (interiorM < 0 || interiorM > 30 || checkVal == false)
+        while (interiorM < 0 ||  interiorM > 30 || checkVal == false)
         {
             WriteLine("Enter a Valid number of interior Murals");
             interiorMu = ReadLine();
@@ -94,7 +121,6 @@ public class MarshallsRevenue
         {
             exteriorCost = EXTERIORCOSTCHANGE;
         }
-
         if (month == 7 || month == 8)
         {
             interiorCost = interiorCostChange;
@@ -123,7 +149,7 @@ public class MarshallsRevenue
         string name;
         int[] countInteriorTypes = { 0, 0, 0, 0, 0 };
         int[] countExteriorTypes = { 0, 0, 0, 0, 0 };
-      
+
         WriteLine("The interior order is ");
         for (int i = 0; i < intCustomers; ++i)
         {
@@ -156,7 +182,6 @@ public class MarshallsRevenue
         }
         WriteLine();
         WriteLine("You are now entering exteriror");
-
         for (int i = 0; i < extCustomers; ++i)
         {
             Write("Enter Your name ");
@@ -198,7 +223,7 @@ public class MarshallsRevenue
         }
         WriteLine();
     }
-    
+
     public static void GetSelectedMurals(string[] muralModels, string[] muralTypes, int interior, int exterior, string[] cusInterior, string[] cusExterior, string[] codesInterior, string[] codesExterior)
     {
         const string QUIT = "Z";
