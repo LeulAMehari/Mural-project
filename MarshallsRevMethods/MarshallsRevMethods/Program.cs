@@ -43,8 +43,15 @@ public class MarshallsRevenue
         int temp;
         int.TryParse(ReadLine(), out temp);
         myMural.MyMonth = temp;
-        WriteLine("Month: {0}", myMural.MyMonth);
     }
+
+
+
+
+
+
+
+
     public static int GetMonth()
     {
         Write("Enter Month ");
