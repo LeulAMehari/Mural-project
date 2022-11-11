@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bDoCqAmBwuTauoCNWbJ6z3HgfUNHdwBtA1ql6Z2rKGcfCocpW11+KZGY3X+zfmA3oQ7j98bTIqtAHBY3+TJwEg==",
+  "dgSpecHash": "ajDhgR3ylQQr4W+KDMjDas01ZuErB7DCDzvnYekDZUO/BvxwN3OHqE7KzIJj7Wb09G22Slc0QhJ64Bw8sYLPJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\snolg\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
+  "projectFilePath": "C:\\Users\\leula\\Source\\Repos\\project111COMS201\\MarshallsRevMethods\\MarshallsRevMethods\\MarshallsRevMethods.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\snolg\\Source\\Repos\\projectCOMS201\\MarshallsRevMethods\\MarshallsRevMethods\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

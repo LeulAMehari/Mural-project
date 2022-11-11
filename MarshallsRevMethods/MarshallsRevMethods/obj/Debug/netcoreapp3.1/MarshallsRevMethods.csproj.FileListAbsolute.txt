@@ -40,3 +40,17 @@ C:\Users\leula\Source\Repos\projectCOMS201Leul's branch\MarshallsRevMethods\Mars
 C:\Users\leula\Source\Repos\projectCOMS201Leul's branch\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.dll
 C:\Users\leula\Source\Repos\projectCOMS201Leul's branch\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.pdb
 C:\Users\leula\Source\Repos\projectCOMS201Leul's branch\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.genruntimeconfig.cache
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\bin\Debug\netcoreapp3.1\MarshallsRevMethods.exe
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\bin\Debug\netcoreapp3.1\MarshallsRevMethods.deps.json
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\bin\Debug\netcoreapp3.1\MarshallsRevMethods.runtimeconfig.json
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\bin\Debug\netcoreapp3.1\MarshallsRevMethods.runtimeconfig.dev.json
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\bin\Debug\netcoreapp3.1\MarshallsRevMethods.dll
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\bin\Debug\netcoreapp3.1\MarshallsRevMethods.pdb
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.csproj.AssemblyReference.cache
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.AssemblyInfoInputs.cache
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.AssemblyInfo.cs
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.csproj.CoreCompileInputs.cache
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.dll
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.pdb
+C:\Users\leula\Source\Repos\project111COMS201\MarshallsRevMethods\MarshallsRevMethods\obj\Debug\netcoreapp3.1\MarshallsRevMethods.genruntimeconfig.cache
