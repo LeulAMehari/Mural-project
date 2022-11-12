@@ -6,16 +6,17 @@ class Mural
     public static char[] muralCodes = { 'L', 'S', 'A', 'C', 'O' };
     public static string[] muralTypes = {"Landscape",
       "Seascape", "Abstract", "Children's", "Other"};
-    public string Name { get; set; }
+    public string Name { get ; set; }
     private char code;
     private string muralType;
-
+    
     /*
     public Mural()
     {
         Name = "";
         Code = 'I';
-    }*/
+    }
+    */
     public char Code
     {
         get
@@ -39,13 +40,15 @@ class Mural
             if (length == muralCodes.Length)
             {
                 code = 'I';
-                muralType = "Invalid";
+                muralType = " Invalid";
             }
             else
             {
-                code += value;
-                muralType += muralTypes[length];
+                code = value;
+                muralType = muralTypes[length] + " ";
             }
+            //WriteLine(value);
+            
 
         }
     }
