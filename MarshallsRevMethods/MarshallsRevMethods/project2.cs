@@ -4,8 +4,7 @@ using static System.Console;
 class Mural
 {
     public static char[] muralCodes = { 'L', 'S', 'A', 'C', 'O' };
-    public static string[] muralTypes = {"Landscape",
-      "Seascape", "Abstract", "Children's", "Other"};
+    public static string[] muralTypes = {"Landscape", "Seascape", "Abstract", "Children's", "Other"};
     public string Name { get ; set; }
     private char code;
     private string muralType;

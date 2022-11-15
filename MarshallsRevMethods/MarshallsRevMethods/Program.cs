@@ -11,31 +11,6 @@ public class MarshallsRevenue
 
     static void Main()
     {
-        /*
-        const int MAX_MURALS = 30;
-        string[] interiorStyle = new string[MAX_MURALS];
-        string[] exteriorStyle = new string[MAX_MURALS];
-        string[] muralModels = { "L", "S", "A", "C", "O" };
-        string[] muralTypes = { "Landscape", "Seascape", "Abstract", "Children", "Other" };
-        string[] customerInterior = new string[MAX_MURALS];
-        string[] customerExterior = new string[MAX_MURALS];
-
-
-        int month = GetMonth();
-        int[] ordersArray = GetNumMurals();
-        int interior = ordersArray[0];
-        int exterior = ordersArray[1];
-
-        string[] exteriorCodes = new string[exterior];
-        string[] interiorCodes = new string[interior];
-        int[] countExteriorTypes = { 0, 0, 0, 0, 0 };
-        bool check = false;
-
-        ComputeRevenue(month, interior, exterior);
-        DataEntry(muralModels, muralTypes, interiorStyle, exteriorStyle, customerInterior, customerExterior, interiorCodes, exteriorCodes, interior, exterior, check);
-        GetSelectedMurals(muralModels, muralTypes, interior, exterior, customerInterior, customerExterior, interiorCodes, exteriorCodes);
-*/
-
         const int MAX_MURALS = 30;
         string[] customerInterior = new string[MAX_MURALS];
         string[] customerExterior = new string[MAX_MURALS];
@@ -43,8 +18,18 @@ public class MarshallsRevenue
         int[] ordersArray = GetNumMurals();
         int interior = ordersArray[0];
         int exterior = ordersArray[1];
-        DataEntry(customerInterior, interior);
-        DataEntry(customerInterior, exterior);
+
+        char[] muralCodeInt = new char[interior];
+        char[] muralCodeExt = new char[exterior];
+        string[] muralTypeInt = new string[interior];
+        string[] muralTypeEx = new string[exterior];
+
+        int count = 0;                  
+
+        DataEntry(customerInterior, interior, muralCodeInt, muralTypeInt, count);
+        count += 1;
+        DataEntry(customerExterior, exterior, muralCodeExt, muralTypeEx, count);
+        GetSelectedMurals(customerInterior, interior, muralCodeInt, muralTypeInt, customerExterior, exterior, muralCodeExt, muralTypeEx);
 
 
     }
@@ -130,21 +115,27 @@ public class MarshallsRevenue
 
         return totalPrice;
     }
-    public static void DataEntry(string[] customerOrders, int customers)
+    public static void DataEntry(string[] customerOrders, int customers, char[] muralCode, string[] muralType, int count)
     {
     
         string name;
-       
-
-        char[] muralCodeInt = new char[customers];
-        char[] muralCodeExt = new char[customers];
-        string[] muralType = new string[customers];
-
         bool check;
 
         Mural myMural = new Mural();
-       // WriteLine("The interior order is ");
-        
+        // WriteLine("The interior order is ");
+
+        if (count == 0)
+        {
+            WriteLine("Values for the interior murals");
+            WriteLine("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
+        }
+        else if (count == 1)
+        {
+            WriteLine("Values for the exterior murals");
+            WriteLine("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
+        }
+
+
         for (int i = 0; i < customers; ++i)
         {
             Mural muralM = new Mural();
@@ -167,7 +158,7 @@ public class MarshallsRevenue
                 check = char.TryParse(ReadLine().ToUpper(), out muralStyle);
                 muralM.Code = muralStyle;
             }
-            muralCodeInt[i] = muralM.Code;
+            muralCode[i] = muralM.Code;
             muralType[i] = muralM.MuralType;
 
             Write("Enter Your name ");
@@ -187,31 +178,38 @@ public class MarshallsRevenue
        
     }
 
-    public static void GetSelectedMurals(string[] muralModels, string[] muralTypes, int interior, int exterior, string[] cusInterior, string[] cusExterior, string[] codesInterior, string[] codesExterior)
+    public static void GetSelectedMurals(string[] customerInterior, int interior, char[]  muralCodeInt, string[] muralTypeInt, string[] customerExterior, int exterior, char[] muralCodeExt, string[]muralTypeEx)
     {
-        const string QUIT = "Z";
+        const char QUIT = 'Z';
         int totalCus = interior + exterior;
         WriteLine("Enter a Mural Type or Z to quit ");
-        string mStyle = ReadLine();
+        char mStyle = Convert.ToChar(ReadLine());
 
         while (mStyle != QUIT)
         {
-            for (int j = 0; j < codesInterior.Length; ++j)
+            while (mStyle != 'L' && mStyle != 'l' && mStyle != 'S' && mStyle != 's' && mStyle != 'A' && mStyle != 'a' && mStyle != 'C' && mStyle != 'c' && mStyle != 'O'
+                && mStyle != 'o')
             {
-                if (codesInterior[j] == mStyle)
+                Write("Valid entries include only L, S, A, C or O, try again: ");
+                
+                mStyle = Convert.ToChar(ReadLine());
+            }
+            for (int j = 0; j < muralCodeInt.Length; ++j)
+            {
+                if (muralCodeInt[j] == mStyle)
                 {
-                    WriteLine("{0} Interior", cusInterior[j]);
+                    WriteLine("{0} Interior", customerInterior[j]);
                 }
             }
-            for (int x = 0; x < codesExterior.Length; ++x)
+            for (int x = 0; x < muralCodeExt.Length; ++x)
             {
-                if (codesExterior[x] == mStyle)
+                if (muralCodeExt[x] == mStyle)
                 {
-                    WriteLine("{0} Exterior", cusExterior[x]);
+                    WriteLine("{0} Exterior", customerExterior[x]);
                 }
             }
             WriteLine("Enter a Mural Type or Z to quit ");
-            mStyle = ReadLine();
+            mStyle = Convert.ToChar(ReadLine());
         }
     }
 }
