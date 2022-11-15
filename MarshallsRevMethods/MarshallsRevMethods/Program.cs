@@ -24,13 +24,12 @@ public class MarshallsRevenue
         string[] muralTypeInt = new string[interior];
         string[] muralTypeEx = new string[exterior];
 
-        int count = 0;                  
+        int count = 0;         //To know which murals design (interior or exterior) the program is calling in dataEntry method         
 
         DataEntry(customerInterior, interior, muralCodeInt, muralTypeInt, count);
         count += 1;
         DataEntry(customerExterior, exterior, muralCodeExt, muralTypeEx, count);
         GetSelectedMurals(customerInterior, interior, muralCodeInt, muralTypeInt, customerExterior, exterior, muralCodeExt, muralTypeEx);
-
 
     }
     public static int GetMonth()
@@ -122,7 +121,7 @@ public class MarshallsRevenue
         bool check;
 
         Mural myMural = new Mural();
-        // WriteLine("The interior order is ");
+     
 
         if (count == 0)
         {
@@ -140,7 +139,7 @@ public class MarshallsRevenue
         {
             Mural muralM = new Mural();
             // mural.Code[i] = mural.Code;
-            WriteLine("L: for Landscape\nS: for Seascape\nA: for Abstract\nC: for Children\nO: for other");
+            WriteLine("Enter\n L: for Landscape\nS: for Seascape\nA: for Abstract\nC: for Children\nO: for other");
             char muralStyle;
             check = char.TryParse(ReadLine().ToUpper(), out muralStyle);
             while (check == false)
@@ -165,8 +164,6 @@ public class MarshallsRevenue
             name = ReadLine();
             muralM.Name = name;
             customerOrders[i] = muralM.Name;
-
-            check = false;
         }
         
         WriteLine("The order is ");
@@ -174,8 +171,7 @@ public class MarshallsRevenue
         {
             WriteLine("{0,-10}{1,-17}", muralType[i], customerOrders[i]);
         }
-        WriteLine();
-       
+        WriteLine(); 
     }
 
     public static void GetSelectedMurals(string[] customerInterior, int interior, char[]  muralCodeInt, string[] muralTypeInt, string[] customerExterior, int exterior, char[] muralCodeExt, string[]muralTypeEx)
@@ -198,14 +194,14 @@ public class MarshallsRevenue
             {
                 if (muralCodeInt[j] == mStyle)
                 {
-                    WriteLine("{0} Interior", customerInterior[j]);
+                    WriteLine("{0}: Interior", customerInterior[j]);
                 }
             }
             for (int x = 0; x < muralCodeExt.Length; ++x)
             {
                 if (muralCodeExt[x] == mStyle)
                 {
-                    WriteLine("{0} Exterior", customerExterior[x]);
+                    WriteLine("{0}: Exterior", customerExterior[x]);
                 }
             }
             WriteLine("Enter a Mural Type or Z to quit ");

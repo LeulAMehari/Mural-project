@@ -9,13 +9,12 @@ class Mural
     private char code;
     private string muralType;
     
-    /*
     public Mural()
     {
         Name = "";
         Code = 'I';
     }
-    */
+    
     public char Code
     {
         get
