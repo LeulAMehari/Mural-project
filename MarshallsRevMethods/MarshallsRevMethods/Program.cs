@@ -29,6 +29,7 @@ public class MarshallsRevenue
         DataEntry(customerInterior, interior, muralCodeInt, muralTypeInt, count);
         count += 1;
         DataEntry(customerExterior, exterior, muralCodeExt, muralTypeEx, count);
+        ComputeRevenue(month, interior, exterior)
         GetSelectedMurals(customerInterior, interior, muralCodeInt, muralTypeInt, customerExterior, exterior, muralCodeExt, muralTypeEx);
 
     }
